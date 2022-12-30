@@ -1,0 +1,253 @@
+*{
+    box-sizing:border-box;
+}
+.body{
+    display: grid;
+    grid-template-rows:1fr;
+   
+}
+.parent{
+    max-width: 100%;
+    max-height: 40%;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:black;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+   
+}
+.logo{
+    padding-left: 22px;
+    font-family:'Times New Roman', Times, serif;
+}
+.logo h2{
+    color: white;
+}
+.right{
+    display: flex;
+    padding-right: 22px;
+}
+.header ul{
+    display: flex;
+}
+.header ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 5px 0px;
+}
+
+.header ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: smaller;
+
+}
+.top{
+    display: grid;
+	grid-template-rows:1fr;
+}
+.log{
+    padding-top: 22px;
+}
+
+.two{
+    background-color:black ;
+    padding: 22px 30px;
+    display: flex;
+    width: 100%;
+}
+.caption h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 242px;
+    color: #FFFFFF; 
+}
+    
+
+.two .img{
+    right: 167px;
+    top: 625px;
+    position: absolute;
+    width: 665px;
+   
+}
+
+.parent2{
+    display: flex;
+}
+.parent2 .img{
+    padding-top: 236px;
+    padding-left: 89px;
+}
+.parent2 img{
+width: 572px;
+height: 726px;
+}
+.parent2 .us{
+    padding-top: 236px;
+    padding-left: 67px;
+    padding-right: 59px;
+}
+.parent2 h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 35.02px;
+}
+.head h1{
+    padding-left: 82px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 211px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+}
+
+.our{
+    justify-content: space-between;
+    display: flex;
+    overflow-x: scroll;
+}
+.our .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 4px 32px;
+    box-sizing: border-box; 
+    width: 599px;
+    height: 423px;
+    left: 82px;
+    top: 2464px;
+   
+}
+.our .box p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.head1 h1{
+    padding-left: 518px;
+    padding-top: 22px;
+    padding-right: 518px;
+    font-weight: 700;
+    font-size: 69px;
+    line-height: 121px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+  
+}
+.contactus{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    max-width: 1231px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.form{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #000000;
+}
+.form input,
+.form textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid white;
+    background-color: #000000;
+
+}
+
+.button{
+    width: 93.46px;
+    height: 33px;
+    left: 224.46px;
+    top: 3953px;
+    
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+margin-top: 20px;
+
+color: #000000;
+
+}
+
+.box:hover {
+    background-color:black;
+    color: white;
+  }
+
+
+.us h1{ animation: fadeIn 10s; }
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      .head h1{ animation: fadeIn 10s; }
+      @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+
+        .head1 h1{ animation: fadeIn 10s; }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+          }
+          .caption h1{ animation: fadeIn 10s; }
+          @keyframes fadeIn {
+              0% { opacity: 0; }
+              100% { opacity: 1; }
+          }
+
+
+
+          @media screen and (max-width: 767px){
+            .about{
+                flex-flow: row wrap;
+            }
+           .about .parent2 .img{
+            display: block;
+            order: 1;
+            width: 100%;
+            height: 250px;
+           }
+           .about .parent2 .us{
+            display: block;
+            order: 2;
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 20px 35px;
+
+           }
+
+            
+          }
